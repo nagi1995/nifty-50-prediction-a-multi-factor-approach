@@ -15,7 +15,7 @@ The stock market is highly volatile and highly non-linear and predicting the sto
 | Exponential Moving Average Model | 149.114      |
 |  ARIMA(2, 1, 2) Model    | 1875.698 |
 | Linear Regression Model      | 149.809      |
-| Linear Regression Model with L1 Regularization | 144.816      |
+| **Linear Regression Model with L1 Regularization** | **144.816**      |
 |  Linear Regression Model with L2 Regularization    | 149.603 |
 | Linear Regression Model with L1 & L2 Regularization      | 144.851      |
 | Support Vector Regressor (linear) | 186.138      |
