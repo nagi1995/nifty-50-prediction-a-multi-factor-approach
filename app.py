@@ -42,20 +42,26 @@ def getFileAndPredict():
         filename = secure_filename(file.filename)
         file.save(filename)
         
+        if not filename.endswith(".txt"): 
+            delete_file(filename)
+            return render_template("index.html", prediction_text1 = "Please give a text file as input", prediction_text2 = "")
+        
         with open(filename) as f:
             file_content = f.read()
         
         y_pred, y_true = predict(file_content)
-        
-        try:
-            os.remove(filename)
-        except Exception as e:
-            print("error: ", e)
-        
+        delete_file(filename)
         return_string1 = "Actual closing index value for next working day is " + str(y_true) + "."
         return_string2 = "Predicted closing index value for next working day is " + str(np.round(y_pred[0,0], decimals = 3)) + "."
-        return render_template('index.html', prediction_text1 = return_string1, prediction_text2 = return_string2)
-    
+        return render_template("index.html", prediction_text1 = return_string1, prediction_text2 = return_string2)
+    else:
+        return render_template("index.html")
+
+def delete_file(filename):
+    try: 
+        os.remove(filename)
+    except Exception as e: 
+        print("error: ", e)
 
 def predict(file_content):
     xy = file_content.split(",")
