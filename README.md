@@ -25,6 +25,10 @@ The stock market is highly volatile and highly non-linear and predicting the sto
 ## [Link](https://nifty-50-prediction.herokuapp.com/) to Heroku web-app.
 
 ## Sample predictions
+![Post - Feed](https://user-images.githubusercontent.com/46963154/132938670-a633a353-a800-4326-91aa-9233d02ccb79.gif)
+
+
+
 https://user-images.githubusercontent.com/46963154/132727840-85ac71ff-237b-4d57-b845-368e1a7cdce2.mp4
 
 
