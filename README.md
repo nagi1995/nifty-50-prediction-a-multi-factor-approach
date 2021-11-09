@@ -22,10 +22,11 @@ The stock market is highly volatile and highly non-linear and predicting the sto
 | LSTM      | 168.314      |
 | LSTM with other features | 166.954      |
 
-## [Link](https://nifty-50-prediction.herokuapp.com/) to Heroku web-app.
+## [Link](http://ec2-3-133-113-79.us-east-2.compute.amazonaws.com:8080/) to AWS web-app.
 
 ## Sample predictions
-https://user-images.githubusercontent.com/46963154/132727840-85ac71ff-237b-4d57-b845-368e1a7cdce2.mp4
+https://user-images.githubusercontent.com/46963154/140963296-0c391464-83f6-4ec3-8c3f-4a7409b668cc.mp4
+
 
 
 ## Conclusion
